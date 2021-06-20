@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/almost_black"
     tools:context=".MovieDetailActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView android:id="@+id/imageView_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/headerbigherosix"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView android:id="@+id/textView_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Big hero 6"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/mustard"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25sp"
+            android:textAlignment="viewEnd"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@color/mustard"
+
+            />
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/textView_sinopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When a devastating event befalls the city of San Fransokyo and catapults Hiro into the midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to uncover the mystery, Hiro transforms his friends into a band of high-tech heroes called 'Big Hero 6'"
+        android:textSize="14sp"
+        android:textColor="@color/baby_gray"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="30dp"
+        />
+
+</LinearLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PopcornFactory">
-        <activity android:name=".MovieDetailActivity"></activity>
+        <activity android:name=".SeatSelectionActivity"></activity>
+        <activity android:name=".MovieDetailActivity" />
         <activity android:name=".CatalogActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

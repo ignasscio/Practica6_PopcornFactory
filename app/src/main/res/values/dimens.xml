@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop_radiusGroup">10dp</dimen>
+    <dimen name="horizontal_padding_radiousGroup">20dp</dimen>
+    <dimen name="radio_size">40dp</dimen>
+    <dimen name="radioButtonTextSize">20sp</dimen>
+</resources>

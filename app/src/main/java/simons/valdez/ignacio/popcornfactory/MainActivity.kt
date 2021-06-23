@@ -12,10 +12,12 @@ class MainActivity : AppCompatActivity() {
 
         var button_getmein:Button = findViewById(R.id.button_getmein) as Button
 
-        button_getmein.setOnClickListener{
-            var intent:Intent = Intent(this, CatalogActivity::class.java)
+        button_getmein.setOnClickListener {
+            var intent: Intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
+
+
 
     }
 }

@@ -22,6 +22,7 @@ class CatalogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_catalog)
 
+
         cargarItems()
 
         peliculasAdapter = ItemAdapter(this, peliculas)
@@ -89,6 +90,9 @@ class CatalogActivity : AppCompatActivity() {
                 intent.putExtra("image",item.image)
                 intent.putExtra("sinopsis",item.sinopsis)
                 intent.putExtra("header",item.header)
+                intent.putExtra("numberSeats", (20 - item.seats.size))
+                intent.putExtra("seats", item.seats)
+                intent.putExtra("position",position)
                 contexto!!.startActivity(intent)
             }
 
